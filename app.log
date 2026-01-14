@@ -1,0 +1,25 @@
+2026-01-14 15:50:44.711 [INFO] M4_Activity8.BankAccountClass - Deposit Requested : ₱ 5000.0
+2026-01-14 15:50:44.715 [INFO] M4_Activity8.BankAccountClass - Test 'Deposit' completed successfully.
+2026-01-14 15:50:44.716 [INFO] M4_Activity8.BankAccountClass - Withdraw requested : ₱3000.0 
+2026-01-14 15:50:44.716 [INFO] M4_Activity8.BankAccountClass - Withdrawal Completed: ₱7000.0
+2026-01-14 15:50:44.716 [INFO] M4_Activity8.BankAccountClass - Test 'Withdrawal' completed successfully.
+2026-01-14 15:50:44.717 [INFO] M4_Activity8.BankAccountClass - Deposit Requested : ₱ -500.0
+2026-01-14 15:50:44.717 [ERROR] M4_Activity8.BankAccountClass - ERROR : Cannot deposit negative value : ₱-500.0
+2026-01-14 15:50:44.717 [ERROR] M4_Activity8.BankAccountClass - Test 'Deposit' failed due to invalid amount.
+M4_Activity8.InvalidAmountException: ERROR : Invalid ammount entered
+	at M4_Activity8.BankAccountClass.deposit(BankAccountClass.java:35)
+	at M4_Activity8.Main.lambda$2(Main.java:9)
+	at M4_Activity8.BankAccountClass.runTest(BankAccountClass.java:48)
+	at M4_Activity8.Main.main(Main.java:9)
+2026-01-14 15:50:44.728 [INFO] M4_Activity8.BankAccountClass - Withdraw requested : ₱20000.0 
+2026-01-14 15:50:44.728 [WARN] M4_Activity8.BankAccountClass - WARNING : Insufficient funds, amount entered : ₱20000.0 ; current balance is : Balance 7000.0
+2026-01-14 15:50:44.729 [ERROR] M4_Activity8.BankAccountClass - Test 'Withdrawal' failed due to insufficient funds.
+M4_Activity8.InsufficientFundsException: ERROR : Insufficient amount requested
+	at M4_Activity8.BankAccountClass.withdraw(BankAccountClass.java:22)
+	at M4_Activity8.Main.lambda$3(Main.java:10)
+	at M4_Activity8.BankAccountClass.runTest(BankAccountClass.java:48)
+	at M4_Activity8.Main.main(Main.java:10)
+2026-01-14 15:50:44.729 [INFO] M4_Activity8.BankAccountClass - Deposit Requested : ₱ 60000.0
+2026-01-14 15:50:44.729 [WARN] M4_Activity8.BankAccountClass - Large deposit: ₱60000.0 - requires verification
+2026-01-14 15:50:44.729 [INFO] M4_Activity8.BankAccountClass - Deposit Completed : ₱60000.0, New balance : ₱67000.0
+2026-01-14 15:50:44.729 [INFO] M4_Activity8.BankAccountClass - Test 'Deposit' completed successfully.
