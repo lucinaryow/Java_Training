@@ -1,0 +1,48 @@
+2026-01-15 10:30:03.376 INFO  c.m.a.service.BankAccountService - Creating account for owner: John Doe
+2026-01-15 10:30:03.384 INFO  c.m.a.service.BankAccountService - Account ACC001 created successfully for John Doe
+2026-01-15 10:30:03.387 INFO  c.m.a.service.BankAccountService - Creating account for owner: Jane Smith
+2026-01-15 10:30:03.388 INFO  c.m.a.service.BankAccountService - Account ACC002 created successfully for Jane Smith
+2026-01-15 10:30:03.391 INFO  c.m.a.service.BankAccountService - Transfer request: ACC001 -> ACC002, amount: 3000.0
+2026-01-15 10:30:03.392 INFO  c.m.a.service.BankAccountService - Transfer successful: ACC001 -> ACC002, amount: 3000.0
+2026-01-15 10:30:03.394 INFO  c.m.a.service.BankAccountService - Transfer request: ACC001 -> ACC999, amount: 1000.0
+2026-01-15 10:30:03.410 WARN  c.m.a.service.BankAccountService - Transfer failed: destination account ACC999 not found
+2026-01-15 10:30:03.412 INFO  c.m.a.service.BankAccountService - Transfer request: ACC001 -> ACC002, amount: -500.0
+2026-01-15 10:30:03.413 WARN  c.m.a.service.BankAccountService - Transfer failed: invalid amount -500.0
+2026-01-15 10:30:03.419 INFO  c.m.a.service.BankAccountService - Transfer request: ACC001 -> ACC001, amount: 1000.0
+2026-01-15 10:30:03.420 WARN  c.m.a.service.BankAccountService - Transfer failed: same source and destination account ACC001
+2026-01-15 10:30:03.422 INFO  c.m.a.service.BankAccountService - Transfer request: ACC999 -> ACC002, amount: 1000.0
+2026-01-15 10:30:03.423 WARN  c.m.a.service.BankAccountService - Transfer failed: source account ACC999 not found
+2026-01-15 10:30:03.425 INFO  c.m.a.service.BankAccountService - Transfer request: ACC002 -> ACC001, amount: 50000.0
+2026-01-15 10:30:03.426 WARN  c.m.a.service.BankAccountService - Transfer failed: insufficient funds in account ACC002. Balance: 8000.0, Required: 50000.0
+2026-01-15 10:30:03.428 INFO  c.m.a.service.BankAccountService - Creating account for owner: Bob Johnson
+2026-01-15 10:30:03.429 WARN  c.m.a.service.BankAccountService - Account creation failed: account ACC001 already exists
+2026-01-15 10:30:03.432 INFO  c.m.a.service.BankAccountService - Creating account for owner: Alice Brown
+2026-01-15 10:30:03.433 WARN  c.m.a.service.BankAccountService - Account creation failed: account number is null or empty
+2026-01-15 10:30:03.435 INFO  c.m.a.service.BankAccountService - Creating account for owner: 
+2026-01-15 10:30:03.436 WARN  c.m.a.service.BankAccountService - Account creation failed: owner name is null or empty
+2026-01-15 10:30:03.439 INFO  c.m.a.service.BankAccountService - Creating account for owner: Charlie Wilson
+2026-01-15 10:30:03.440 WARN  c.m.a.service.BankAccountService - Account creation failed: invalid initial balance -1000.0
+2026-01-15 10:33:55.175 INFO  c.m.a.service.BankAccountService - Creating account for owner: John Doe
+2026-01-15 10:33:55.184 INFO  c.m.a.service.BankAccountService - Account ACC001 created successfully for John Doe
+2026-01-15 10:33:55.185 INFO  c.m.a.service.BankAccountService - Creating account for owner: Jane Smith
+2026-01-15 10:33:55.186 INFO  c.m.a.service.BankAccountService - Account ACC002 created successfully for Jane Smith
+2026-01-15 10:33:55.187 INFO  c.m.a.service.BankAccountService - Transfer request: ACC001 -> ACC002, amount: 3000.0
+2026-01-15 10:33:55.188 INFO  c.m.a.service.BankAccountService - Transfer successful: ACC001 -> ACC002, amount: 3000.0
+2026-01-15 10:33:55.190 INFO  c.m.a.service.BankAccountService - Transfer request: ACC001 -> ACC999, amount: 1000.0
+2026-01-15 10:33:55.190 WARN  c.m.a.service.BankAccountService - Transfer failed: destination account ACC999 not found
+2026-01-15 10:33:55.192 INFO  c.m.a.service.BankAccountService - Transfer request: ACC001 -> ACC002, amount: -500.0
+2026-01-15 10:33:55.192 WARN  c.m.a.service.BankAccountService - Transfer failed: invalid amount -500.0
+2026-01-15 10:33:55.198 INFO  c.m.a.service.BankAccountService - Transfer request: ACC001 -> ACC001, amount: 1000.0
+2026-01-15 10:33:55.199 WARN  c.m.a.service.BankAccountService - Transfer failed: same source and destination account ACC001
+2026-01-15 10:33:55.200 INFO  c.m.a.service.BankAccountService - Transfer request: ACC999 -> ACC002, amount: 1000.0
+2026-01-15 10:33:55.200 WARN  c.m.a.service.BankAccountService - Transfer failed: source account ACC999 not found
+2026-01-15 10:33:55.201 INFO  c.m.a.service.BankAccountService - Transfer request: ACC002 -> ACC001, amount: 50000.0
+2026-01-15 10:33:55.202 WARN  c.m.a.service.BankAccountService - Transfer failed: insufficient funds in account ACC002. Balance: 8000.0, Required: 50000.0
+2026-01-15 10:33:55.204 INFO  c.m.a.service.BankAccountService - Creating account for owner: Bob Johnson
+2026-01-15 10:33:55.204 WARN  c.m.a.service.BankAccountService - Account creation failed: account ACC001 already exists
+2026-01-15 10:33:55.205 INFO  c.m.a.service.BankAccountService - Creating account for owner: Alice Brown
+2026-01-15 10:33:55.208 WARN  c.m.a.service.BankAccountService - Account creation failed: account number is null or empty
+2026-01-15 10:33:55.209 INFO  c.m.a.service.BankAccountService - Creating account for owner: 
+2026-01-15 10:33:55.210 WARN  c.m.a.service.BankAccountService - Account creation failed: owner name is null or empty
+2026-01-15 10:33:55.214 INFO  c.m.a.service.BankAccountService - Creating account for owner: Charlie Wilson
+2026-01-15 10:33:55.216 WARN  c.m.a.service.BankAccountService - Account creation failed: invalid initial balance -1000.0
